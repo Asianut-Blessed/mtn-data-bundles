@@ -1,0 +1,84 @@
+/* styles.css*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Container to enable smooth horizontal scrolling on mobile screens */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Centre the table on the page and collapse borders into single lines */
+table {
+  width: 85%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table caption styling */
+caption {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #333333;
+}
+
+/* Common cell padding and borders */
+th, td {
+  border: 1px solid #dddddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+/* Table Header styling (MTN yellow theme) */
+thead {
+  background-color: #ffcc00;
+  color: #000000;
+}
+
+/* Right-align price values */
+.price-col {
+  text-align: right;
+}
+
+/* Alternating row shading using :nth-child() */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Highlight row smoothly when mouse hovers over it */
+tbody tr:hover {
+  background-color: #e0f2fe;
+}
+
+/* Best Value Badge Styling */
+.best-value {
+  background-color: #2d16a3;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+/* Footer row styling */
+tfoot {
+  background-color: #eaeaea;
+  font-weight: bold;
+}
+
+.footer-cell {
+  text-align: center;
+}
+
+/* Media query for mobile phones narrower than 600px */
+@media screen and (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+}
